@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quote for Today</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">  
+</head>
+<body>
+<section class="box section parallax-background" style="background-image: url(assets/images/skyline1200x800-168.jpg);">
+    <div class="box_magnet box_magnet-padding">        
+        <div class="section_container container">
+            <div class="box"><div class="box_magnet">
+                <div class="row"><div class=" col-sm-8 col-sm-offset-2">
+                    <h1 class="hero_text">GET YOUR QUOTE FOR TODAY</h1><br/>
+                    <div class="buttons btn-inverse buttons-center">
+					<a id="inspire" onclick="getQuote('inspire')" class="buttons__btn btn btn-lg btn-success">Inspirational</a> 
+					<a id="management" onclick="getQuote('management')" class="buttons__btn btn btn-lg btn-success">Management</a> 
+					<a id="life" onclick="getQuote('life')" class="buttons__btn btn btn-lg btn-success">Life</a> 
+					</div>
+					<br/>
+                    <div class="buttons btn-inverse buttons-center"> 
+					<a id="funny" onclick="getQuote('funny')" class="buttons__btn btn btn-lg btn-success">Funny</a> 
+					<a id="love" onclick="getQuote('love')" class="buttons__btn btn btn-lg btn-success">Love</a> 
+					<a id="art" onclick="getQuote('art')" class="buttons__btn btn btn-lg btn-success" >Art</a> 
+					<a id="sports" onclick="getQuote('sports')" class="buttons__btn btn btn-lg btn-success">Sports</a>
+					</div>
+                </div></div>
+				<br/><br/>
+				<blockquote id="quotebox" class="blockquote center well lead">
+				  <p id="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p>
+				  <footer id="author" class="blockquote-footer">Someone famous </footer>
+				</blockquote>
+            </div></div>
+        </div>
+        
+    </div>
+</section>
+  <script src="getQuote.js"></script>
+  <script src="assets/jquery/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
